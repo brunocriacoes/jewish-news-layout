@@ -5,6 +5,8 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const heroImage = document.querySelector('.hero-story img');
 const headerLogo = document.querySelector('.brand img');
 const logoSource = document.querySelector('.brand source');
+const fontDecrease = document.querySelector('.font-decrease');
+const fontIncrease = document.querySelector('.font-increase');
 document.querySelectorAll('a').forEach(link => link.setAttribute('href', '#'));
 
 const publicationDates = {
@@ -67,6 +69,18 @@ function syncLogo() {
   headerLogo.src = 'logo-light.png';
 }
 syncLogo();
+
+let fontSize = Number(localStorage.getItem('tpjn-font-size') || 0);
+function setFontSize(size) {
+  fontSize = Math.max(-1, Math.min(1, size));
+  body.classList.remove('font-small', 'font-large');
+  if (fontSize === -1) body.classList.add('font-small');
+  if (fontSize === 1) body.classList.add('font-large');
+  localStorage.setItem('tpjn-font-size', String(fontSize));
+}
+setFontSize(fontSize);
+fontDecrease.addEventListener('click', () => setFontSize(fontSize - 1));
+fontIncrease.addEventListener('click', () => setFontSize(fontSize + 1));
 
 function setTheme() {
   const isDark = body.classList.toggle('dark');
