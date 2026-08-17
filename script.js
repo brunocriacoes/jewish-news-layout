@@ -7,7 +7,15 @@ const headerLogo = document.querySelector('.brand img');
 const logoSource = document.querySelector('.brand source');
 const fontDecrease = document.querySelector('.font-decrease');
 const fontIncrease = document.querySelector('.font-increase');
-document.querySelectorAll('a').forEach(link => link.setAttribute('href', '#'));
+document.querySelectorAll('a').forEach(link => {
+  if (!link.closest('.nav, .mobile-menu, .site-footer, .newsletter, .section-heading, .breaking')) link.setAttribute('href', 'single.html');
+});
+document.querySelectorAll('.hero-story, .compact-story, .text-story, .image-story, .photo-card, .opinion article').forEach(card => {
+  card.tabIndex = 0;
+  card.setAttribute('role', 'link');
+  card.addEventListener('click', event => { if (!event.target.closest('a, button')) window.location.href = 'single.html'; });
+  card.addEventListener('keydown', event => { if (event.key === 'Enter') window.location.href = 'single.html'; });
+});
 
 const publicationDates = {
   'Hoje, 08:40': '11 de agosto de 2026',
