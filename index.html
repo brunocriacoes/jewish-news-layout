@@ -7,7 +7,7 @@
   <title>The Portuguese Jewish News</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" /><link rel="stylesheet" href="header-consistency.css" /><link rel="stylesheet" href="header-consistency-fix.css" />
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -15,10 +15,10 @@
     <div class="shell header-main">
       <button class="icon-button menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><i></i><i></i><i></i></button>
       <a class="brand" href="#top" aria-label="The Portuguese Jewish News — início"><picture><source media="(prefers-color-scheme: dark)" srcset="logo-dark.png"><img src="logo-light.png" alt="The Portuguese Jewish News" /></picture></a>
-      <nav class="nav" aria-label="Navegação principal"><a class="is-active" href="#destaques">Início</a><a href="#sobre">Sobre nós</a><a href="#noticias">Notícias</a><a href="#artigos">Artigos</a><a href="#museus">Museus</a><a href="#comunidades">Comunidades</a></nav>
-      <div class="header-actions"><div class="font-controls" role="group" aria-label="Tamanho do texto"><button class="font-control font-decrease" aria-label="Diminuir tamanho do texto" title="Diminuir texto">A−</button><button class="font-control font-increase" aria-label="Aumentar tamanho do texto" title="Aumentar texto">A+</button></div><button class="icon-button theme-toggle" aria-label="Ativar modo escuro" title="Alternar tema"><span class="sun">☼</span><span class="moon">☾</span></button><button class="support-button">Apoie-nos <span>→</span></button></div>
+      <nav class="nav" aria-label="Main navigation"><a class="is-active" href="index.html">Home</a><a href="category.html">About us</a><a href="category.html">News</a><a href="category.html">Articles</a><a href="category.html">Museums</a><a class="communities" href="category.html">Communities</a></nav>
+      <div class="header-actions"><div class="font-controls" role="group" aria-label="Text size"><button class="font-control font-decrease" aria-label="Decrease text" title="Decrease text">A−</button><button class="font-control font-increase" aria-label="Increase text" title="Increase text">A+</button></div><button class="icon-button theme-toggle" aria-label="Switch to dark mode" title="Switch theme"><span class="sun">☼</span><span class="moon">☾</span></button></div>
     </div>
-    <div id="mobile-menu" class="mobile-menu" hidden><a href="#destaques">Início</a><a href="#sobre">Sobre nós</a><a href="#noticias">Notícias</a><a href="#artigos">Artigos</a><a href="#museus">Museus</a><a href="#comunidades">Comunidades</a></div>
+    <div id="mobile-menu" class="mobile-menu" hidden><a href="index.html">Home</a><a href="category.html">About us</a><a href="category.html">News</a><a href="category.html">Articles</a><a href="category.html">Museums</a><a href="category.html">Communities</a></div>
   </header>
   <main id="conteudo" class="shell">
     <section class="breaking" aria-label="Última hora"><b>AGORA</b><p>Últimas notícias da comunidade judaica em Portugal e no mundo.</p><a href="#destaques">Acompanhe <span>→</span></a></section>
@@ -39,6 +39,7 @@
     <section id="newsletter" class="newsletter"><div><span class="eyebrow">NEWSLETTER</span><h2>Notícias que aproximam.</h2><p>Receba a seleção semanal do The Portuguese Jewish News na sua caixa de entrada.</p></div><form><label class="sr-only" for="email">O seu e-mail</label><input id="email" type="email" placeholder="O seu melhor e-mail" required><button type="submit">Subscrever <span>→</span></button><small>Ao subscrever, concorda com a nossa política de privacidade.</small></form></section>
   </main>
   <footer class="site-footer" id="sobre"><div class="shell footer-grid"><div><img src="logo-dark.png" alt="The Portuguese Jewish News" class="footer-logo"><p>Jornalismo independente para informar, conectar e preservar a vida judaica em Portugal.</p></div><div><h3>Secções</h3><a href="#noticias">Notícias</a><a href="#artigos">Artigos</a><a href="#comunidades">Comunidades</a></div><div><h3>Contacto</h3><a href="mailto:pjn@portuguesejewishnews.com">pjn@portuguesejewishnews.com</a><a href="#museus">Museus</a><a href="#">Anuncie</a></div><div class="legal"><h3>Ficha técnica</h3><p>Entidade proprietária: Comunidade Israelita do Porto</p><p>Diretora: Gabriela Cantergi<br>Diretora Adjunta: Miriam Assor</p><p>Periodicidade: trissemanal</p></div></div><div class="shell copyright">© 2026 The Portuguese Jewish News. Todos os direitos reservados.</div></footer>
-  <script src="script.js"></script>
+  <script src="script.js"></script><script src="header-search.js"></script><script src="mobile-menu.js"></script>
 </body>
 </html>
+
