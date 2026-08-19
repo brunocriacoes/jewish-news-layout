@@ -1,0 +1,2 @@
+.pagination-prev:not(.is-disabled),.pagination-next{border:1px solid transparent;border-radius:6px;padding:10px 12px}.pagination-prev:not(.is-disabled):hover,.pagination-next:hover{background:var(--gold);border-color:var(--gold);color:#281e12}.dark .pagination-prev:not(.is-disabled):hover,.dark .pagination-next:hover{background:#e9cc78;border-color:#e9cc78;color:#281e12}
+
