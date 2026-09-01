@@ -1,0 +1,2 @@
+.nav a:last-of-type{background:transparent!important;color:var(--ink)!important;padding:0!important;border-radius:0!important;transform:none!important}.nav a:last-of-type::after{display:block!important}.nav a:last-of-type:hover{background:transparent!important;color:var(--gold)!important}
+
